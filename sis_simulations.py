@@ -42,7 +42,7 @@ print("Female count: ", len(female_count))
 
 seeds = int(N*0.01)
 
-dataframe = pd.read_csv('/content/drive/MyDrive/susceptibility_matrix2.csv')
+dataframe = pd.read_csv('susceptibility_matrix2.csv')
 dataframe
 
 def get_beta(nodeA, nodeB):
@@ -144,7 +144,7 @@ def get_beta(nodeA, nodeB):
             beta = age_p * female_p * latin_p
     return beta
 
-recovery_matrix = pd.read_csv('/content/drive/MyDrive/recovery_matrix.csv',index_col=0)
+recovery_matrix = pd.read_csv('recovery_matrix.csv',index_col=0)
 recovery_matrix
 
 def get_rec(node):
